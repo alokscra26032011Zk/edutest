@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_navigation_view"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:outlineAmbientShadowColor="#E30022"
+    android:outlineSpotShadowColor="#E30022"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/top_rounded_corners"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioButton
+            android:id="@+id/nav_visitor_button"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_bottom_navigation_view_icon_visitor"
+            android:text="Visitor"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            style="@style/AppTheme.RadioButtonLikeBottomNavigationView">
+
+        </RadioButton>
+
+
+        <RadioButton
+            android:id="@+id/nav_visitor_create_button"
+            android:drawableTop="@drawable/selector_bottom_navigation_view_icon_visitor_create"
+            android:text="Add Visitor"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            style="@style/AppTheme.RadioButtonLikeBottomNavigationView">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/nav_profile_button"
+            android:drawableTop="@drawable/selector_bottom_navigation_view_icon_profile"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            style="@style/AppTheme.RadioButtonLikeBottomNavigationView">
+
+        </RadioButton>
+
+    </RadioGroup>
+</androidx.cardview.widget.CardView>

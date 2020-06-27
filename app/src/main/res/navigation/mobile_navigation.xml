@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_visitor">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.edutest.ui.home.home.HomeFragment"
+        android:label="Visit.Mobi"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.edutest.ui.home.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_visitor"
+        android:name="com.example.edutest.ui.home.visitor.VisitorFragment"
+        android:label="Visitor"
+        tools:layout="@layout/fragment_visitor" />
+
+
+
+
+</navigation>
